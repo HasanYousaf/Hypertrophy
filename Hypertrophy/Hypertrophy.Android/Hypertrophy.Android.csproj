@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{42091D0A-4A31-41AA-B2B9-584A8AD6AB1F}</ProjectGuid>
+    <ProjectGuid>{CA596EA2-89B0-4E34-8973-8731EC0D8B0D}</ProjectGuid>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TemplateGuid>{c9e5eea5-ca05-42a1-839b-61506e0a37df}</TemplateGuid>
     <OutputType>Library</OutputType>
@@ -88,7 +88,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Hypertrophy\Hypertrophy.csproj">
-      <Project>{422321DA-03E6-4D08-BEDF-D6AB92B6621B}</Project>
+      <Project>{50FA7DB8-FC89-4996-8521-2708286C41A8}</Project>
       <Name>Hypertrophy</Name>
     </ProjectReference>
   </ItemGroup>

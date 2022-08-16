@@ -11,7 +11,7 @@ namespace Hypertrophy
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new HomePage());
+            MainPage = new NavigationPage(new CalculatorPage());
         }
 
         protected override void OnStart()

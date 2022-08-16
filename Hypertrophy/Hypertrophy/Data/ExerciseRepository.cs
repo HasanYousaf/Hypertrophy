@@ -1,52 +1,26 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Text;
 
 namespace Hypertrophy.Data
 {
     public class ExerciseRepository
     {
-        public List<Exercise> GetExercises()
+        ObservableCollection<Exercise> _exerciseLog = new ObservableCollection<Exercise>();
+        public ExerciseRepository()
         {
-            return new List<Exercise>()
-            {
-                new Exercise
-                {
-                    ExerciseName = "Aerobics",
-                    BodyPart = BodyPart.Cardio,
-                    Category = ExerciseCategory.Cardio
-                },
-                new Exercise
-                {
-                    ExerciseName = "Arnold Press",
-                    BodyPart = BodyPart.Shoulders,
-                    Category = ExerciseCategory.Dumbbell
-                },
-                new Exercise
-                {
-                    ExerciseName = "Back Extension",
-                    BodyPart = BodyPart.Back,
-                    Category = ExerciseCategory.Bodyweight
-                },
-                new Exercise
-                {
-                    ExerciseName = "Bench Dip",
-                    BodyPart = BodyPart.Arms,
-                    Category = ExerciseCategory.Bodyweight
-                },
-                new Exercise
-                {
-                    ExerciseName = "Bench Press",
-                    BodyPart = BodyPart.Chest,
-                    Category = ExerciseCategory.Barbell
-                },
-                new Exercise
-                {
-                    ExerciseName = "Close-Grip Bench Press",
-                    BodyPart = BodyPart.Chest,
-                    Category = ExerciseCategory.Barbell
-                },
-            };
+            _exerciseLog.Add(new Exercise("Chest", "Barbell", "Bench Press"));
+            _exerciseLog.Add(new Exercise("Cardio", "Aerobics", "Cardio"));
+            _exerciseLog.Add(new Exercise("Shoulders", "Dumbbell", "Arnold Press"));
+            _exerciseLog.Add(new Exercise("Back", "Machine", "Back Extension"));
+            _exerciseLog.Add(new Exercise("Arms", "Bodyweight", "Bench Dip"));
+            _exerciseLog.Add(new Exercise("Core", "Duration", "Side Plank"));
+            _exerciseLog.Add(new Exercise("Chest", "Barbell", "Bench Press"));
+            _exerciseLog.Add(new Exercise("Full Body", "Barbell", "Clean And Jerk"));
+            _exerciseLog.Add(new Exercise("Chest", "Cable", "Pec Fly"));
+            _exerciseLog.Add(new Exercise("Back", "Weighted", "Pull-up"));
+
         }
     }
 }
