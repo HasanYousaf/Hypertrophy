@@ -25,16 +25,23 @@ namespace Hypertrophy.Pages
 
         private void CalculateTDEE_Clicked(object sender, EventArgs e)
         {
-            double height = double.Parse(HeightInput.Text);
-            double weight = double.Parse(WeightInput.Text);
-            double age = double.Parse(AgeInput.Text);
-            ActivityLevel activityLevel = (ActivityLevel)(ActivityLevelPicker.SelectedItem);
-            Sex sex = (Sex)(SexPicker.SelectedItem);
-            WeightUnit weightUnit = (WeightUnit)(WeightUnitPicker.SelectedItem);
-            HeightUnit heightUnit = (HeightUnit)(HeightUnitPicker.SelectedItem);
+            try
+            {
+                double height = double.Parse(HeightInput.Text);
+                double weight = double.Parse(WeightInput.Text);
+                double age = double.Parse(AgeInput.Text);
+                ActivityLevel activityLevel = (ActivityLevel)(ActivityLevelPicker.SelectedItem);
+                Sex sex = (Sex)(SexPicker.SelectedItem);
+                WeightUnit weightUnit = (WeightUnit)(WeightUnitPicker.SelectedItem);
+                HeightUnit heightUnit = (HeightUnit)(HeightUnitPicker.SelectedItem);
 
-            double tdee = calculator.GetTDEE(heightUnit, weightUnit, sex, height, weight, age, activityLevel);
-            TDEE.Text = $"Your TDEE is {tdee}";
+                double tdee = calculator.GetTDEE(heightUnit, weightUnit, sex, height, weight, age, activityLevel);
+                TDEE.Text = $"Your TDEE is {tdee}";
+            }
+            catch (Exception)
+            {
+                DisplayAlert("Invalid Input!", "Ensure all fields are filled correctly", "ok");
+            }
         }
 
         private void Calculate1RM_Clicked(object sender, EventArgs e)

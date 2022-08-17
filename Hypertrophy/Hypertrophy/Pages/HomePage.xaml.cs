@@ -16,5 +16,15 @@ namespace Hypertrophy.Pages
         {
             InitializeComponent();
         }
+
+        private void NutritionLog_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new NutritionLog());
+        }
+
+        private void Calculator_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new CalculatorPage());
+        }
     }
 }

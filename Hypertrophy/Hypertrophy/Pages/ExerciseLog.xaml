@@ -4,9 +4,14 @@
              x:Class="Hypertrophy.Pages.ExerciseLog">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <ListView x:Name="Exercise" ItemSelected="Exercise_ItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding FoodName}" TextColor="Black"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Button x:Name="AddExercise" Clicked="AddExercise_Clicked" Text="Add Exercise"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

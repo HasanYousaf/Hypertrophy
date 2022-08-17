@@ -1,12 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
              x:Class="Hypertrophy.Pages.NutritionLog">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <StackLayout Orientation="Horizontal">
+                <Label x:Name="TotalCalories" Text="Total Calories"/>
+                <Label x:Name="TotalProtein" Text="Total Protein"/>
+                <Label x:Name="TotalFat" Text="Total Fat"/>
+                <Label x:Name="TotalCarb" Text="Total Carbs"/>
+            </StackLayout>
+            <ListView x:Name="Food" ItemSelected="Food_ItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding FoodName}" TextColor="Black"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Button x:Name="AddFood" Clicked="AddFood_Clicked" Text="Add Food"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -7,6 +7,8 @@
             <Label Text="Welcome to Xamarin.Forms!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+            <Button x:Name="Calculator" Clicked="Calculator_Clicked" Text="Calculator"/>
+            <Button x:Name="NutritionLog" Clicked="NutritionLog_Clicked" Text="Nutrition Log"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

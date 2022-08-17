@@ -16,9 +16,9 @@
                 <ColumnDefinition></ColumnDefinition>
                 <ColumnDefinition Width="1*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <Entry Grid.Column="0" Grid.Row="0" x:Name="HeightInput" Placeholder="Enter your height"/>
-            <Entry Grid.Column="0" Grid.Row="1" x:Name="WeightInput" Placeholder="Enter your weight"/>
-            <Entry Grid.Column="0"  Grid.Row="2" x:Name="AgeInput" Placeholder="Enter your age"/>
+            <Entry Grid.Column="0" Grid.Row="0" x:Name="HeightInput" Keyboard="Numeric" Placeholder="Enter your height"/>
+            <Entry Grid.Column="0" Grid.Row="1" x:Name="WeightInput" Keyboard="Numeric" Placeholder="Enter your weight"/>
+            <Entry Grid.Column="0"  Grid.Row="2" x:Name="AgeInput" Keyboard="Numeric" Placeholder="Enter your age"/>
             <Picker Title="Select your activity level" Grid.ColumnSpan="2" Grid.Row="3" x:Name="ActivityLevelPicker"/>
             <Picker Title="Select your sex" Grid.Column="1" Grid.Row="2" x:Name="SexPicker"/>
             <Picker Title="Select a weight unit" Grid.Column="1" Grid.Row="1" x:Name="WeightUnitPicker"/>
@@ -47,7 +47,7 @@
                 <ColumnDefinition></ColumnDefinition>
                 <ColumnDefinition></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <Entry Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" x:Name="TDEEInput" Placeholder="Enter TDEE"/>
+            <Entry Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" Keyboard="Numeric" x:Name="TDEEInput" Placeholder="Enter TDEE"/>
             <Label Text="Protein" Grid.Column="0" Grid.Row="1" x:Name="ProteinValue"/>
             <Label Text="Fat" Grid.Column="1" Grid.Row="1" x:Name="FatValue"/>
             <Label Text="Carbs" Grid.Column="2" Grid.Row="1" x:Name="CarbValue"/>
@@ -72,8 +72,8 @@
                 <ColumnDefinition></ColumnDefinition>
                 <ColumnDefinition Width="1*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <Entry Grid.Column="0" Grid.Row="0" x:Name="RepWeightInput" Placeholder="Enter rep weight"/>
-            <Entry Grid.Column="1" Grid.Row="0" x:Name="NumRepInput" Placeholder="Enter number of reps"/>
+            <Entry Grid.Column="0" Grid.Row="0" x:Name="RepWeightInput" Keyboard="Numeric" Placeholder="Enter rep weight"/>
+            <Entry Grid.Column="1" Grid.Row="0" x:Name="NumRepInput" Keyboard="Numeric" Placeholder="Enter number of reps"/>
             <Button x:Name="Calculate1RM" Grid.ColumnSpan="2" Grid.Row="2" Text="Calculate" Clicked="Calculate1RM_Clicked"/>
             <Label x:Name="OneRepMax" HorizontalOptions="CenterAndExpand" Grid.Row="3" Grid.ColumnSpan="2"/>
         </Grid>

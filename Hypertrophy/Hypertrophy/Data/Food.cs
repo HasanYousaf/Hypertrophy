@@ -25,5 +25,10 @@ namespace Hypertrophy.Data
             FoodFat = _foodFat;
             FoodCarb = _foodcarb;
         }
+
+        public override string ToString()
+        {
+            return string.Format("Food Calories: {0}, Food Name: {1}, Food Protein: {2}, Food Fat: {3}, Food Carb: {4}", FoodCalories, FoodName, FoodProtein, FoodFat, FoodCarb);
+        }
     }
 }
