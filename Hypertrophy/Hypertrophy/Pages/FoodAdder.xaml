@@ -11,5 +11,6 @@
         <Entry x:Name="FoodFatInput" Keyboard="Numeric" Placeholder="Enter grams of fat"/>
         <Entry x:Name="FoodCarbInput" Keyboard="Numeric" Placeholder="Enter grams of carbs"/>
         <Button x:Name="LogFood" Text="Add" Clicked="LogFood_Clicked"/>
+        <Label x:Name="FoodAdderError"/>
     </StackLayout>
 </xctViews:Popup>

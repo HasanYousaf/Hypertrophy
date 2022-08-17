@@ -1,8 +1,62 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Application xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xctViews="clr-namespace:Xamarin.CommunityToolkit.UI.Views;assembly=Xamarin.CommunityToolkit"
              x:Class="Hypertrophy.App">
     <Application.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Button">
+                <Setter Property="CornerRadius" Value="100"/>
+                <Setter Property="TextTransform" Value="None"/>
+                <Setter Property="BackgroundColor" Value="DarkGray"/>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="BorderColor" Value="LightBlue"/>
+                <Setter Property="BorderWidth" Value="3"/>
+            </Style>
+            <Style TargetType="ContentPage">
+                <Setter Property="Padding" Value="20"/>
+                <Setter Property="BackgroundColor" Value="LightBlue"/>
+            </Style>
+            <Style TargetType="Stepper">
+                <Setter Property="HorizontalOptions" Value="CenterAndExpand"/>
+            </Style>
+            <Style TargetType="Label">
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+                <Setter Property="VerticalTextAlignment" Value="Center"/>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="FontSize" Value="16"/>
+            </Style>
+            <Style TargetType="StackLayout">
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="VerticalOptions" Value="CenterAndExpand"/>
+            </Style>
+            <Style TargetType="Label" x:Key="Title">
+                <Setter Property="VerticalOptions" Value="Start"/>
+                <Setter Property="FontSize" Value="Title"/>
+                <Setter Property="TextColor" Value="White"/>
+            </Style>
+            <Style TargetType="Entry">
+                <Setter Property="TextColor" Value="Black"/>
+                <Setter Property="PlaceholderColor" Value="Black"/>
+            </Style>
+            <Style TargetType="NavigationPage">
+                <Setter Property="BarBackgroundColor" Value="LightBlue"/>
+            </Style>
+            <Style TargetType="TabbedPage">
+                <Setter Property="UnselectedTabColor" Value="LightBlue"/>
+                <Setter Property="SelectedTabColor" Value="LightBlue"/>
+            </Style>
+            <Style TargetType="Picker">
+                <Setter Property="TextColor" Value="White"/>
+            </Style>
+            <Style TargetType="xctViews:Popup">
+                <Setter Property="BackgroundColor" Value="LightBlue"/>
+            </Style>
+            <Style TargetType="ListView">
+                <Setter Property="SeparatorColor" Value="White"/>
+                <Setter Property="SeparatorVisibility" Value="Default"/>
+            </Style>
 
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

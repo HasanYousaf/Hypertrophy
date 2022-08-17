@@ -1,15 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Hypertrophy.Pages.HomePage">
+             x:Class="Hypertrophy.Pages.HomePage"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="LightBlue">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-            <Button x:Name="Calculator" Clicked="Calculator_Clicked" Text="Calculator"/>
-            <Button x:Name="NutritionLog" Clicked="NutritionLog_Clicked" Text="Nutrition Log"/>
-            <Button x:Name="ExerciseLog" Clicked="ExerciseLog_Clicked" Text="Exercise Log"/>
+            <Label Style="{StaticResource Title}" Text="Welcome to Hypertrophy!"/>
+            <Label Text="Made by Hasan Yousaf" VerticalOptions="End"/>
+            <StackLayout>
+                <Button x:Name="Calculator" Clicked="Calculator_Clicked" Text="Calculator"/>
+                <Button x:Name="NutritionLog" Clicked="NutritionLog_Clicked" Text="Nutrition Log"/>
+                <Button x:Name="ExerciseLog" Clicked="ExerciseLog_Clicked" Text="Exercise Log"/>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

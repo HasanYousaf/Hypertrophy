@@ -21,7 +21,6 @@ namespace Hypertrophy.Pages
         public NutritionLog()
         {
             InitializeComponent();
-            AddFoodExamples();
             TotalCounter();
             Food.ItemsSource = FoodRepository._foodLog;
         }
@@ -45,15 +44,6 @@ namespace Hypertrophy.Pages
             TotalCarb.Text = $"Total carbs: {totalCarb}";
         }
 
-        private void AddFoodExamples()
-        {
-            foodRepo.AddFood(414, "Chicken Stir-Fry", 39.1, 3.3, 57.8);
-            foodRepo.AddFood(519, "Turkey Burger", 33.5, 20.1, 48.2);
-            foodRepo.AddFood(779, "Pan Pizza", 31.3, 27, 95.9);
-            foodRepo.AddFood(130, "Milk 2% 1 Cup", 8, 12, 5);
-            foodRepo.AddFood(70, "1 Large Egg", 6, 5, 0);
-        }
-
         private void Food_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             Food foodSelection = Food.SelectedItem as Food;
@@ -63,7 +53,6 @@ namespace Hypertrophy.Pages
         private void AddFood_Clicked(object sender, EventArgs e)
         {
             Navigation.ShowPopup(new FoodAdder());
-            TotalCounter();
             
         }
     }

@@ -25,13 +25,19 @@ namespace Hypertrophy.Pages
 
         private void LogExercise_Clicked(object sender, EventArgs e)
         {
-            string exerciseNameInput = ExerciseNameInput.Text;
-            double exerciseRepsInput = double.Parse(ExerciseRepsInput.Text);
-            double exerciseWeightInput = double.Parse(ExerciseWeightInput.Text);
-
-            exerciseRepo.AddExercise(exerciseRepsInput, exerciseWeightInput, exerciseNameInput);
-
-            ExerciseAdderPopup.Dismiss(_exerciseLog);
+            try
+            {
+                string exerciseNameInput = ExerciseNameInput.Text;
+                double exerciseRepsInput = double.Parse(ExerciseRepsInput.Text);
+                double exerciseWeightInput = double.Parse(ExerciseWeightInput.Text);
+                exerciseRepo.AddExercise(exerciseRepsInput, exerciseWeightInput, exerciseNameInput);
+                ExerciseAdderPopup.Dismiss(_exerciseLog);
+            }
+            catch (Exception)
+            {
+                ExerciseAdderError.Text = "Invalid Input! Please ensure all fields are entered correctly!";
+            }
+                
         }
     }
 }

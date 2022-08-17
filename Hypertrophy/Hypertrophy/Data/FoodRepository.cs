@@ -16,7 +16,6 @@ namespace Hypertrophy.Data
             FoodLog.Add(new Food(_foodCalories, _foodName, _foodProtein, _foodFat, _foodCarb));
             return FoodLog;
         }
-
         public ObservableCollection<Food> FoodLog {get { return _foodLog;} set { _foodLog = value; } }
 
     }

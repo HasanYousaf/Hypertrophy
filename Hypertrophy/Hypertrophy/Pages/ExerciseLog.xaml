@@ -1,10 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Hypertrophy.Pages.ExerciseLog">
+             x:Class="Hypertrophy.Pages.ExerciseLog"
+             BackgroundColor="LightBlue">
     <ContentPage.Content>
         <StackLayout>
-            <ListView x:Name="Exercise" ItemSelected="Exercise_ItemSelected"/>
+            <Label Text="Exercise Log" Style="{StaticResource Title}"/>
+            <ListView x:Name="Exercise">
+            </ListView>
             <Button x:Name="AddExercise" Clicked="AddExercise_Clicked" Text="Add Exercise"/>
         </StackLayout>
     </ContentPage.Content>

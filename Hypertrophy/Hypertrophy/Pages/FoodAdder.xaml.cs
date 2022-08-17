@@ -25,15 +25,22 @@ namespace Hypertrophy.Pages
 
         private void LogFood_Clicked(object sender, EventArgs e)
         {
-            string foodNameInput = FoodNameInput.Text;
-            double foodCaloriesInput = double.Parse(FoodCaloriesInput.Text);
-            double foodProteinInput = double.Parse(FoodProteinInput.Text);
-            double foodFatInput = double.Parse(FoodFatInput.Text);
-            double foodCarbInput = double.Parse(FoodCarbInput.Text);
+            try
+            {
+                string foodNameInput = FoodNameInput.Text;
+                double foodCaloriesInput = double.Parse(FoodCaloriesInput.Text);
+                double foodProteinInput = double.Parse(FoodProteinInput.Text);
+                double foodFatInput = double.Parse(FoodFatInput.Text);
+                double foodCarbInput = double.Parse(FoodCarbInput.Text);
 
-            foodRepo.AddFood(foodCaloriesInput, foodNameInput, foodProteinInput, foodFatInput, foodCarbInput);
+                foodRepo.AddFood(foodCaloriesInput, foodNameInput, foodProteinInput, foodFatInput, foodCarbInput);
 
-            FoodAdderPopup.Dismiss(_foodLog);
+                FoodAdderPopup.Dismiss(_foodLog);
+            }
+            catch (Exception)
+            {
+                FoodAdderError.Text = "Invalid Input! Please ensure all fields are filled correctly!";
+            }
         }
     }
 }
