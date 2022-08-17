@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xctViews:Popup xmlns="http://xamarin.com/schemas/2014/forms"
+           xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+           xmlns:xctViews="clr-namespace:Xamarin.CommunityToolkit.UI.Views;assembly=Xamarin.CommunityToolkit"
+           x:Class="Hypertrophy.Pages.ExerciseAdder"
+           x:Name="ExerciseAdderPopup">
+    <StackLayout>
+        <Entry x:Name="ExerciseNameInput" Placeholder="Enter exercise name"/>
+        <Entry x:Name="ExerciseRepsInput" Keyboard="Numeric" Placeholder="Enter number of reps"/>
+        <Entry x:Name="ExerciseWeightInput" Keyboard="Numeric" Placeholder="Enter weight"/>
+        <Button x:Name="LogExercise" Text="Add Exercise" Clicked="LogExercise_Clicked"/>
+    </StackLayout>
+</xctViews:Popup>

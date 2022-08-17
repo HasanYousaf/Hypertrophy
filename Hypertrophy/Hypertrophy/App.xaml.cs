@@ -11,7 +11,7 @@ namespace Hypertrophy
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new NutritionLog());
+            MainPage = new NavigationPage(new HomePage());
         }
 
         protected override void OnStart()

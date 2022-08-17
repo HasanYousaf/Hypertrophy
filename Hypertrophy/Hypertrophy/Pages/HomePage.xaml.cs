@@ -26,5 +26,10 @@ namespace Hypertrophy.Pages
         {
             Navigation.PushAsync(new CalculatorPage());
         }
+
+        private void ExerciseLog_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ExerciseLog());
+        }
     }
 }

@@ -9,6 +9,7 @@
                 HorizontalOptions="CenterAndExpand" />
             <Button x:Name="Calculator" Clicked="Calculator_Clicked" Text="Calculator"/>
             <Button x:Name="NutritionLog" Clicked="NutritionLog_Clicked" Text="Nutrition Log"/>
+            <Button x:Name="ExerciseLog" Clicked="ExerciseLog_Clicked" Text="Exercise Log"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

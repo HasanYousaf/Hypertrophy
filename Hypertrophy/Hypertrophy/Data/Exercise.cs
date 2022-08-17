@@ -19,7 +19,7 @@ namespace Hypertrophy.Data
     //    Other
     //}
 
-    //public enum BodyPart
+    //public enum ExerciseReps
     //{
     //    Core,
     //    Arms,
@@ -34,18 +34,23 @@ namespace Hypertrophy.Data
     //}
     public class Exercise
     {
-        private string _bodyPart { get; set; }
-        private string _category { get; set; }
-        private string _exerciseName { get; set; }
-        public string BodyPart { get { return _bodyPart; } set { _bodyPart = value; } }
-        public string Category { get { return _category; } set { _category = value; } }
+        private double _exerciseReps;
+        private double _exerciseWeight;
+        private string _exerciseName;
+        public double ExerciseReps { get { return _exerciseReps; } set { _exerciseReps = value; } }
+        public double ExerciseWeight { get { return _exerciseWeight; } set { _exerciseWeight = value; } }
         public string ExerciseName { get { return _exerciseName; } set { _exerciseName = value; } }
 
-        public Exercise(string _bodyPart, string _category, string _exerciseName)
+        public Exercise(double _exerciseReps, double _exerciseWeight, string _exerciseName)
         {
-            BodyPart = _bodyPart;
-            Category = _category;
+            ExerciseReps = _exerciseReps;
+            ExerciseWeight = _exerciseWeight;
             ExerciseName = _exerciseName;
+        }
+
+        public override string ToString()
+        {
+            return $"{_exerciseName} || Weight: {_exerciseWeight} || Reps: {_exerciseReps}";
         }
 
     }

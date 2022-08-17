@@ -5,14 +5,11 @@
            x:Class="Hypertrophy.Pages.FoodAdder"
            x:Name="FoodAdderPopup">
     <StackLayout>
-        <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
         <Entry x:Name="FoodNameInput" Placeholder="Enter food name"/>
-        <Entry x:Name="FoodCaloriesInput" Placeholder="Enter amount of calories"/>
-        <Entry x:Name="FoodProteinInput" Placeholder="Enter grams of protein"/>
-        <Entry x:Name="FoodFatInput" Placeholder="Enter grams of fat"/>
-        <Entry x:Name="FoodCarbInput" Placeholder="Enter grams of carbs"/>
+        <Entry x:Name="FoodCaloriesInput" Keyboard="Numeric" Placeholder="Enter amount of calories"/>
+        <Entry x:Name="FoodProteinInput" Keyboard="Numeric" Placeholder="Enter grams of protein"/>
+        <Entry x:Name="FoodFatInput" Keyboard="Numeric" Placeholder="Enter grams of fat"/>
+        <Entry x:Name="FoodCarbInput" Keyboard="Numeric" Placeholder="Enter grams of carbs"/>
         <Button x:Name="LogFood" Text="Add" Clicked="LogFood_Clicked"/>
     </StackLayout>
 </xctViews:Popup>
