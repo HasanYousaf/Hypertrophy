@@ -4,34 +4,9 @@ using System.Text;
 
 namespace Hypertrophy.Data
 {
-    //public enum ExerciseCategory
-    //{
-    //    Barbell,
-    //    Dumbbell,
-    //    Machine,
-    //    Cable,
-    //    Weighted,
-    //    Bodyweight,
-    //    AssistedBodyweight,
-    //    RepsOnly,
-    //    Cardio,
-    //    Duration,
-    //    Other
-    //}
-
-    //public enum ExerciseReps
-    //{
-    //    Core,
-    //    Arms,
-    //    Back,
-    //    Chest,
-    //    Legs,
-    //    Shoulders,
-    //    Olympic,
-    //    FullBody,
-    //    Cardio,
-    //    Other
-    //}
+    //Hasan Yousaf
+    //Exercise class initalizes Exercise object along with string override method to display Exercise in ListView.
+    //Exercise data is entered through public variables and set into private variables from there.
     public class Exercise
     {
         private double _exerciseReps;

@@ -13,6 +13,10 @@ using Xamarin.Forms.Xaml;
 namespace Hypertrophy.Pages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
+    //Hasan Yousaf
+    //FoodAdder page is opened from NutritionLog via AddFood button.
+    //When LogFood button is clicked, AddFood method is used to add Food object to ObservableCollection FoodLog from where it is stored in static _foodLog.
+    //In lieu of DisplayAlert, FoodAdderError populates when input is invalid to let the user know to check their values.
     public partial class FoodAdder : Popup
     {
         ObservableCollection<Food> _foodLog = new ObservableCollection<Food>();

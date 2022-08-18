@@ -9,7 +9,10 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace Hypertrophy.Pages
-{
+{   
+    //Hasan Yousaf
+    //FoodDetailsPage shows the entered details from selected Food object
+    //Food object is passed by NutritionLog.
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class FoodDetailsPage : ContentPage
     {
@@ -21,11 +24,6 @@ namespace Hypertrophy.Pages
             FoodProtein.Text = $"Protein: {food.FoodProtein}";
             FoodFat.Text = $"Fat: {food.FoodFat}";
             FoodCarb.Text = $"Carbs: {food.FoodCarb}";
-        }
-
-        private void DeleteFood_Clicked(object sender, EventArgs e)
-        {
-
         }
     }
 }

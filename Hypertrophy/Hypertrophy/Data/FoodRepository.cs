@@ -7,6 +7,10 @@ using System.Text;
 
 namespace Hypertrophy.Data
 {
+    //Hasan Yousaf
+    //FoodRepository is used to hold a static ObservableCollection called _foodLog along with the method for adding to _foodLog.
+    //This is done by having the AddFood method return the Food object to a non-static ObservableCollection FoodLog.
+    //FoodLog returns the added Food object to static _foodLog.
     public class FoodRepository
     {
         public static ObservableCollection<Food> _foodLog = new ObservableCollection<Food>();

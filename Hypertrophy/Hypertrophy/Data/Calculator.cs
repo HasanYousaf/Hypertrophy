@@ -5,6 +5,10 @@ using System.Text;
 
 namespace Hypertrophy.Data
 {
+    //Hasan Yousaf
+    //Calculator class initalizes all relevant variables and enums required for calculation methods.
+    //Methods are based on actual formulas used to calculate One Rep Max and TDEE
+    //GetProtein, GetFat, and GetCarb are designed with the knowledge that there are 8 calories per gram of fat and 4 calories per gram of carbs or protein.
     public enum ActivityLevel
     {
         Sedentary,

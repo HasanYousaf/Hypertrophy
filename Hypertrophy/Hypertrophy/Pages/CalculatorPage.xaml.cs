@@ -10,6 +10,11 @@ using Xamarin.Forms.Xaml;
 
 namespace Hypertrophy.Pages
 {
+    //Hasan Yousaf
+    //CalculatorPage begins by populating the xaml file's Pickers.
+    //Try-Catch statements are used to maintain app stability and prevent the input of invalid data.
+    //The page also updates the labels above the steppers in the Macros tab so the user knows what they're setting it to.
+    //Lastly, depending on the button clicked, it performs the appropriate calculation using methods from Calculator.cs
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class CalculatorPage : TabbedPage
     {

@@ -8,7 +8,7 @@
         <Entry x:Name="ExerciseNameInput" Placeholder="Enter exercise name"/>
         <Entry x:Name="ExerciseRepsInput" Keyboard="Numeric" Placeholder="Enter number of reps"/>
         <Entry x:Name="ExerciseWeightInput" Keyboard="Numeric" Placeholder="Enter weight"/>
-        <Button x:Name="LogExercise" Text="Add Exercise" Clicked="LogExercise_Clicked"/>
+        <Button x:Name="LogExercise" Text="Add Exercise" Clicked="LogExercise_Clicked" BorderColor="DarkGray"/>
         <Label x:Name="ExerciseAdderError"/>
     </StackLayout>
 </xctViews:Popup>

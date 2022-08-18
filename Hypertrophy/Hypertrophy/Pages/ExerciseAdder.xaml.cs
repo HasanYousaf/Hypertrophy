@@ -12,7 +12,11 @@ using Xamarin.Forms.Xaml;
 namespace Hypertrophy.Pages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-
+    //Hasan Yousaf
+    //ExerciseAdder is a popup that appears when AddExercise button is clicked on ExerciseLog page
+    //Once LogExercise button is clicked, AddExercise method is used to add Exercise object to public ObservableCollection, and finally to static ObservableCollection.
+    //Popup then closes and returns static ObservableCollection.
+    //DisplayAlert cannot be used in popup so in case of an error, ExerciseAdderError lets user know to check their values.
     public partial class ExerciseAdder : Popup
     {
         ObservableCollection<Exercise> _exerciseLog = new ObservableCollection<Exercise>();

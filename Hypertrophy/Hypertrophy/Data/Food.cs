@@ -4,6 +4,8 @@ using System.Text;
 
 namespace Hypertrophy.Data
 {
+    //Hasan Yousaf
+    //Food class initializes Food object. Data is stored in public variables where they are then stored in private variables to ensure data integrity.
     public class Food
     {
         private double _foodCalories;
@@ -24,11 +26,6 @@ namespace Hypertrophy.Data
             FoodProtein = _foodProtein;
             FoodFat = _foodFat;
             FoodCarb = _foodcarb;
-        }
-
-        public override string ToString()
-        {
-            return string.Format("Food Calories: {0}, Food Name: {1}, Food Protein: {2}, Food Fat: {3}, Food Carb: {4}", FoodCalories, FoodName, FoodProtein, FoodFat, FoodCarb);
         }
     }
 }

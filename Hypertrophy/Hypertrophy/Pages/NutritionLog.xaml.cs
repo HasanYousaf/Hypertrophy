@@ -15,9 +15,11 @@ namespace Hypertrophy.Pages
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class NutritionLog : ContentPage
     {
-        FoodRepository foodRepo = new FoodRepository();
-        //ObservableCollection<Food> _foodLog = new ObservableCollection<Food>();
-
+        //Hasan Yousaf
+        //NutritionLog populates ListView with ObservableCollection _foodLog.
+        //TotalCounter is supposed to update the total amount of calories, protein, fat, and carbs consumed based on _foodLog entries.
+        //Clicking ListView item opens FoodDetailsPage.
+        //Clicking AddFood button opens FoodAdder popup.
         public NutritionLog()
         {
             InitializeComponent();
@@ -50,9 +52,10 @@ namespace Hypertrophy.Pages
             Navigation.PushAsync(new FoodDetailsPage(foodSelection));
         }
 
-        private void AddFood_Clicked(object sender, EventArgs e)
+        private async void AddFood_Clicked(object sender, EventArgs e)
         {
-            Navigation.ShowPopup(new FoodAdder());
+           await Navigation.ShowPopupAsync(new FoodAdder());
+           TotalCounter();
             
         }
     }

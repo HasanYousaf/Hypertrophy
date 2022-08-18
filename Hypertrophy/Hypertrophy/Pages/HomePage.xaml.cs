@@ -9,6 +9,8 @@ using Xamarin.Forms.Xaml;
 
 namespace Hypertrophy.Pages
 {
+    //Hasan Yousaf
+    //HomePage directs user to NutritionLog, Calculator, or ExerciseLog based on button clicked.
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class HomePage : ContentPage
     {

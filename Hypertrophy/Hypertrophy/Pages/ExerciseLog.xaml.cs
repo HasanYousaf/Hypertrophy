@@ -10,6 +10,9 @@ using Xamarin.Forms.Xaml;
 
 namespace Hypertrophy.Pages
 {
+    //Hasan Yousaf
+    //ExerciseLog displays Exercise objects stored in ObservableCollection _exerciseLog.
+    //When AddExercise button is clicked, it opens popup ExerciseAdder to continue process to add Exercise.
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ExerciseLog : ContentPage
     {
